@@ -10,7 +10,7 @@ class KMeans(object):
 		high = largest possible cluster initial value
 		low = smallest possible cluster initial value
 		"""
-		self.cluster_centroids = np.random.rand(k, dtype='float64') * high - low
+		self.cluster_centroids = np.random.rand(k, dtype='float64') * (high - low) + low
 
 	def fitTrainingSet(training_set):
 		"""
