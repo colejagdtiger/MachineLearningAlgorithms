@@ -1,6 +1,6 @@
-import numpy
+import numpy as np
 
-class Bias(numpy.ndarray):
+class Bias(np.ndarray):
 
 	def __init__(self, size):
 		super().__init__(size)
